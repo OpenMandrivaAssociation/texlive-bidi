@@ -1,3 +1,9 @@
+# revision 24392
+# category Package
+# catalog-ctan /macros/latex/contrib/bidi
+# catalog-date 2011-10-24 16:26:34 +0200
+# catalog-license lppl1.3
+# catalog-version v1.4.4
 Name:		texlive-bidi
 Version:	v1.4.4
 Release:	1
@@ -162,6 +168,7 @@ with many other commonly-used packages.
 #- source
 %doc %{_texmfdistdir}/source/latex/bidi/bidi.dtx
 %doc %{_texmfdistdir}/source/latex/bidi/bidi.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -172,3 +179,5 @@ with many other commonly-used packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
