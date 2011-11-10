@@ -1,11 +1,11 @@
-# revision 24392
+# revision 24551
 # category Package
 # catalog-ctan /macros/latex/contrib/bidi
-# catalog-date 2011-10-24 16:26:34 +0200
+# catalog-date 2011-11-08 09:53:55 +0100
 # catalog-license lppl1.3
-# catalog-version v1.4.4
+# catalog-version v1.4.6
 Name:		texlive-bidi
-Version:	v1.4.4
+Version:	v1.4.6
 Release:	1
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
@@ -82,6 +82,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/color-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/colortbl-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/combine-xetex-bidi.def
+%{_texmfdistdir}/tex/latex/bidi/crop-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/cvthemebidicasual.sty
 %{_texmfdistdir}/tex/latex/bidi/cvthemebidiclassic.sty
 %{_texmfdistdir}/tex/latex/bidi/dblfnote-xetex-bidi.def
@@ -116,6 +117,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/natbib-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/pdfpages-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/pgf-xetex-bidi.def
+%{_texmfdistdir}/tex/latex/bidi/picinpar-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/plain-luatex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/plain-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/pstricks-xetex-bidi.def
