@@ -1,11 +1,11 @@
-# revision 24551
+# revision 24588
 # category Package
 # catalog-ctan /macros/latex/contrib/bidi
-# catalog-date 2011-11-08 09:53:55 +0100
+# catalog-date 2011-11-13 08:18:31 +0100
 # catalog-license lppl1.3
-# catalog-version v1.4.6
+# catalog-version 11.147
 Name:		texlive-bidi
-Version:	v1.4.6
+Version:	11.147
 Release:	1
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
@@ -56,6 +56,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/artikel3-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/arydshln-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/bibitem.pdf
+%{_texmfdistdir}/tex/latex/bidi/bidi-logo.pdf
 %{_texmfdistdir}/tex/latex/bidi/bidi.sty
 %{_texmfdistdir}/tex/latex/bidi/bidi.tex
 %{_texmfdistdir}/tex/latex/bidi/bidi2in1.sty
@@ -83,6 +84,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/colortbl-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/combine-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/crop-xetex-bidi.def
+%{_texmfdistdir}/tex/latex/bidi/cutwin-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/cvthemebidicasual.sty
 %{_texmfdistdir}/tex/latex/bidi/cvthemebidiclassic.sty
 %{_texmfdistdir}/tex/latex/bidi/dblfnote-xetex-bidi.def
@@ -147,6 +149,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/xltxtra-xetex-bidi.def
 %doc %{_texmfdistdir}/doc/latex/bidi/README
+%doc %{_texmfdistdir}/doc/latex/bidi/bidi-logo.tex
 %doc %{_texmfdistdir}/doc/latex/bidi/bidi.pdf
 %doc %{_texmfdistdir}/doc/latex/bidi/bidisample2e.tex
 %doc %{_texmfdistdir}/doc/latex/bidi/bidismall2e.tex
