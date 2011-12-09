@@ -1,11 +1,11 @@
-# revision 24588
+# revision 24680
 # category Package
 # catalog-ctan /macros/latex/contrib/bidi
-# catalog-date 2011-11-13 08:18:31 +0100
+# catalog-date 2011-11-28 11:55:23 +0100
 # catalog-license lppl1.3
-# catalog-version 11.147
+# catalog-version 11.150
 Name:		texlive-bidi
-Version:	11.147
+Version:	11.150
 Release:	1
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 A convenient interface for typesetting bidirectional texts with
@@ -28,19 +25,19 @@ plain TeX and LaTeX. The package includes adaptations for use
 with many other commonly-used packages.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -56,7 +53,6 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/artikel3-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/arydshln-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/bibitem.pdf
-%{_texmfdistdir}/tex/latex/bidi/bidi-logo.pdf
 %{_texmfdistdir}/tex/latex/bidi/bidi.sty
 %{_texmfdistdir}/tex/latex/bidi/bidi.tex
 %{_texmfdistdir}/tex/latex/bidi/bidi2in1.sty
@@ -149,6 +145,7 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/xltxtra-xetex-bidi.def
 %doc %{_texmfdistdir}/doc/latex/bidi/README
+%doc %{_texmfdistdir}/doc/latex/bidi/bidi-logo.pdf
 %doc %{_texmfdistdir}/doc/latex/bidi/bidi-logo.tex
 %doc %{_texmfdistdir}/doc/latex/bidi/bidi.pdf
 %doc %{_texmfdistdir}/doc/latex/bidi/bidisample2e.tex
