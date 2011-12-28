@@ -24,16 +24,8 @@ A convenient interface for typesetting bidirectional texts with
 plain TeX and LaTeX. The package includes adaptations for use
 with many other commonly-used packages.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -171,7 +163,6 @@ with many other commonly-used packages.
 #- source
 %doc %{_texmfdistdir}/source/latex/bidi/bidi.dtx
 %doc %{_texmfdistdir}/source/latex/bidi/bidi.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -182,5 +173,3 @@ with many other commonly-used packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
