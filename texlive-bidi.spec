@@ -6,7 +6,7 @@
 # catalog-version 11.150
 Name:		texlive-bidi
 Version:	11.150
-Release:	1
+Release:	2
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bidi
