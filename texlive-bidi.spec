@@ -1,12 +1,12 @@
-# revision 24680
+# revision 26076
 # category Package
 # catalog-ctan /macros/latex/contrib/bidi
-# catalog-date 2011-11-28 11:55:23 +0100
+# catalog-date 2012-04-20 19:11:34 +0200
 # catalog-license lppl1.3
-# catalog-version 11.150
+# catalog-version 11.154
 Name:		texlive-bidi
-Version:	11.150
-Release:	2
+Version:	11.154
+Release:	1
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bidi
@@ -105,6 +105,8 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/multicol-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/multienum-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/natbib-xetex-bidi.def
+%{_texmfdistdir}/tex/latex/bidi/ntheorem-hyper-xetex-bidi.def
+%{_texmfdistdir}/tex/latex/bidi/ntheorem-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/pdfpages-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/pgf-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/picinpar-xetex-bidi.def
