@@ -1,11 +1,11 @@
-# revision 26076
+# revision 27207
 # category Package
 # catalog-ctan /macros/latex/contrib/bidi
-# catalog-date 2012-04-20 19:11:34 +0200
+# catalog-date 2012-07-25 12:42:16 +0200
 # catalog-license lppl1.3
-# catalog-version 11.154
+# catalog-version 11.161
 Name:		texlive-bidi
-Version:	11.154
+Version:	11.161
 Release:	1
 Summary:	Support for bidirectional typesetting in plain TeX and LaTeX
 Group:		Publishing
@@ -128,7 +128,6 @@ with many other commonly-used packages.
 %{_texmfdistdir}/tex/latex/bidi/subfigure-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/tabls-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/tabulary-xetex-bidi.def
-%{_texmfdistdir}/tex/latex/bidi/tikz-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/titlesec-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/titletoc-xetex-bidi.def
 %{_texmfdistdir}/tex/latex/bidi/tocbibind-xetex-bidi.def
