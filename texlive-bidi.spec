@@ -1,12 +1,12 @@
-# revision 32162
+# revision 32896
 # category Package
 # catalog-ctan /macros/xetex/latex/bidi
-# catalog-date 2013-11-16 09:40:04 +0100
+# catalog-date 2014-02-04 10:54:49 +0100
 # catalog-license lppl1.3
-# catalog-version 14.4
+# catalog-version 14.6
 Name:		texlive-bidi
-Version:	14.4
-Release:	5
+Version:	14.6
+Release:	1
 Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/bidi
