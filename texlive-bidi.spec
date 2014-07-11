@@ -6,7 +6,7 @@
 # catalog-version 14.8
 Name:		texlive-bidi
 Version:	14.8
-Release:	1
+Release:	2
 Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/bidi
