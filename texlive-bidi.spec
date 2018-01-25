@@ -1,5 +1,5 @@
 Name:		texlive-bidi
-Version:	32.1
+Version:	32.4
 Release:	1
 Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
 Group:		Publishing
