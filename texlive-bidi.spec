@@ -1,13 +1,13 @@
 Name:		texlive-bidi
-Version:	35.8
+Version:	64967
 Release:	1
 Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/bidi
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.r64967.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.doc.r64967.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.source.r64967.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ plain TeX and LaTeX. The package includes adaptations for use
 with many other commonly-used packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -35,7 +35,8 @@ with many other commonly-used packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
