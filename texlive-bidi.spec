@@ -1,6 +1,6 @@
 Name:		texlive-bidi
 Version:	65572
-Release:	1
+Release:	2
 Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/bidi
