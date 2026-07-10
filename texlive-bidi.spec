@@ -1,45 +1,25 @@
-Name:		texlive-bidi
-Version:	73698
-Release:	1
-Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX engine
+%global tl_name bidi
+%global tl_revision 77682
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	26.01.08
+Release:	%{tl_revision}.1
+Summary:	Bidirectional typesetting in plain TeX and LaTeX, using XeTeX or LuaTeX
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/bidi
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.source.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/macros/unicodetex/generic/bidi
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bidi.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-A convenient interface for typesetting bidirectional texts with
-plain TeX and LaTeX. The package includes adaptations for use
-with many other commonly-used packages.
+A convenient interface for typesetting bidirectional texts with plain
+TeX and LaTeX, using XeTeX or LuaTeX. The package includes adaptations
+for use with many other commonly-used packages.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/xelatex/bidi
-%doc %{_texmfdistdir}/doc/xelatex/bidi
-#- source
-%doc %{_texmfdistdir}/source/xelatex/bidi
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
